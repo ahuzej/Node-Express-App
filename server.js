@@ -29,4 +29,8 @@ expressApp.use('/', indexRouter)
 const authorRouter = require('./routes/authors')
 expressApp.use('/authors', authorRouter)
 
+const bookRouter = require('./routes/books')
+expressApp.use('/books', bookRouter)
+
+
 expressApp.listen(process.env.PORT || 3000)
